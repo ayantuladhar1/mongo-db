@@ -60,4 +60,5 @@ For the above scenario, we have to use find() method as it takes two arguments: 
   * df = spark.read.format("com.mongodb.spark.sql.DefaultSource").option("uri", "mongodb+srv://{username}:{password}@cluster0.mpuo02w.mongodb.net/youtubedb.youtube").load()
 
 <img width="1876" height="588" alt="image" src="https://github.com/user-attachments/assets/b6eefc4b-8d16-44b5-ad81-b64b1491c724" />
+
 * To fetch the **regionCode** based on channelId we cannot simply use, **df.select("regionCode").filter("items.id.channelId = 'UCJowOS1R0FnhipXVqEnYU1A'").show()**, 
