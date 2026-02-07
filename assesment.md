@@ -61,4 +61,6 @@ For the above scenario, we have to use find() method as it takes two arguments: 
 
 <img width="1876" height="588" alt="image" src="https://github.com/user-attachments/assets/b6eefc4b-8d16-44b5-ad81-b64b1491c724" />
 
-* To fetch the **regionCode** based on channelId we cannot simply use, **df.select("regionCode").filter("items.id.channelId = 'UCJowOS1R0FnhipXVqEnYU1A'").show()**, 
+* To fetch the **regionCode** based on channelId we cannot simply use, **df.select("regionCode").filter("items.id.channelId = 'UCJowOS1R0FnhipXVqEnYU1A'").show()**, because items is an array and **select()** only choosen column **items.id.channelId** is not just a column so we cannot do **ARRAY = STRING** If we want to do something simple like **df.select("regionCode").show()**. Then we can use that but in our case we have to loop through arrays or simply convert array elements into rows for that we can use **explode()** function, although there are other ways as well.
+
+<img width="826" height="355" alt="image" src="https://github.com/user-attachments/assets/84eb6409-402e-4577-b345-b2fb0887d314" />
