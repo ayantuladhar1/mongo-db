@@ -81,3 +81,8 @@ ProductId, Sales
 ```
 
 ## Create sales.csv in spark dataframe and write to mongodb in sales collection.
+<img width="406" height="439" alt="image" src="https://github.com/user-attachments/assets/89d9e176-df10-4f76-a236-359f2c9fff29" />
+<img width="205" height="418" alt="image" src="https://github.com/user-attachments/assets/145e5773-7c94-4ebe-b4ff-97f2bd2860b8" />
+<img width="1078" height="245" alt="image" src="https://github.com/user-attachments/assets/540cb57a-301a-42d6-8405-a28d68445804" />
+
+
