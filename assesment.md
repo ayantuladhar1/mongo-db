@@ -55,4 +55,8 @@ For the above scenario, we have to use find() method as it takes two arguments: 
 * Pyspark Code to return the only regionCode for only those docs where channelId is **UCJowOS1R0FnhipXVqEnYU1A**
   * First, we have to install pyspack connector using the following commands:  
     * pyspark --packages  
-    * org.mongodb.spark:mongo-spark-connector_2.12:3.0.1  
+    * org.mongodb.spark:mongo-spark-connector_2.12:3.0.1
+* We would use the following command to read the cluster, collections from MongoDB to PySpark
+  * df = spark.read.format("com.mongodb.spark.sql.DefaultSource").option("uri", "mongodb+srv://{username}:{password}@cluster0.mpuo02w.mongodb.net/youtubedb.youtube").load()
+
+<img width="1876" height="588" alt="image" src="https://github.com/user-attachments/assets/b6eefc4b-8d16-44b5-ad81-b64b1491c724" />
